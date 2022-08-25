@@ -69,8 +69,8 @@ class Rocks {
 
         image.onload = () => {
             this.image = image
-            this.width = image.width / 7
-            this.height = image.height * 1
+            this.width = image.width / 8
+            this.height = image.height * 0.8
             this.position = {
                 x: canvas.width,
                 y: canvas.height / 4

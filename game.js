@@ -138,7 +138,7 @@ const Game = {
 
   checkBulletsCollisions() {
     this.player.bullets.forEach((bullet, i) => {
-      if (bullet.positionX > this.boss.position.x + this.boss.width / 2) {
+      if (bullet.positionX > this.boss.position.x + this.boss.width / 2 && bullet.positionY > this.boss.position.y / 2) {
         this.bossHealth--
         this.player.bullets.splice(i, 1)
         console.log(this.bossHealth)
